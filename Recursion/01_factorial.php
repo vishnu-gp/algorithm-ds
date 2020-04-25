@@ -3,15 +3,16 @@
 /**
  * To get factorial of a number
  * 
- * @param $num
+ * @param $n
  * @return integer
  */
-function fact($num)
+function fact($n)
 {
     // Termination condition
-    if($num == 1)
+    if($n == 1)
         return 1;
     else
-        return ($num * fact($num-1));
+        return ($n * fact($n-1));
 }
+
 ?>
