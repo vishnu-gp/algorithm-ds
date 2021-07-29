@@ -9,15 +9,15 @@ const findLengthOfLongestSubstring = function (s) {
     let left = 0, longest = 0
     const cache = {}
     for (let right = 0; right < s.length; right++) {
-        const currentChar = s[right];
+        const currentChar = s[right]
         const lastSeenAt = cache[currentChar]
         if (lastSeenAt >= left)
             left = lastSeenAt + 1
-        cache[currentChar] = right;
-        longest = Math.max(longest, right - left + 1);
+        cache[currentChar] = right
+        longest = Math.max(longest, right - left + 1)
     }
 
-    return longest;
+    return longest
 }
 
 // Driver code
