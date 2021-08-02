@@ -9,6 +9,7 @@
  */
 
 /**
+ * To flatten multi level doubly linked list
  * @param {Node} head
  * @return {Node}
  */
