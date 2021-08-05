@@ -18,3 +18,11 @@ const isValid = function (s) {
     }
     return stack.length === 0
 }
+
+// Driver code
+let result
+result = isValid("")
+// result = isValid("{([])}")
+// result = isValid("{([]")
+// result = isValid("{[(])}")
+// result = isValid("{[]()}")
